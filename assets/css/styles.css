@@ -7,8 +7,9 @@ body {
 }
 
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
+  padding: 1em;
 }
 
 h1 {
@@ -19,7 +20,7 @@ h1 {
   color: light-dark(#2436B4, #f7e8b1);
 }
 
-p, details, li {
+p, details, li, figcaption {
   font-family: "League Spartan", Sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -27,10 +28,22 @@ p, details, li {
   color: light-dark(#676262, #c1baba);
 }
 
+a {
+  overflow-wrap: anywhere;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+figure figcaption {
+  font-style: italic;
+}
+
 .sources > summary {
   border: 2px solid light-dark(#676262, #c1baba);
   border-radius: 8px;
-  width: fit-content;
+  width: max-content;
   padding: 0.5em;
   cursor: pointer;
 }
@@ -44,6 +57,23 @@ p, details, li {
   max-height: 280px;
   opacity: 1;
   object-position: center 50%;
+}
+
+#holodomor {
+  margin: 2em 0;
+  width: 100%;
+}
+
+#pact {
+  width: 50%;
+  float: right;
+  margin: 0 0 2em 2em;
+}
+@media only screen and (max-width: 500px) {
+  #pact {
+    width: 100%;
+    margin: 2em 0;
+  }
 }
 
 .red {
